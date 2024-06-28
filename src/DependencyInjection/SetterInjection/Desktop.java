@@ -1,4 +1,4 @@
-package DpendencyInjection.ConcstructorInjection;
+package DependencyInjection.SetterInjection;
 
 public class Desktop implements Computer {
 

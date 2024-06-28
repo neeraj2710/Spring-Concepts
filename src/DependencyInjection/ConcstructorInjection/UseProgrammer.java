@@ -1,4 +1,4 @@
-package DpendencyInjection.ConcstructorInjection;
+package DependencyInjection.ConcstructorInjection;
 
 public class UseProgrammer {
     public static void main(String[] args) {

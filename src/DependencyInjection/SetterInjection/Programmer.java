@@ -1,4 +1,4 @@
-package DpendencyInjection.SetterInjection;
+package DependencyInjection.SetterInjection;
 
 public class Programmer {
     private Computer comp;

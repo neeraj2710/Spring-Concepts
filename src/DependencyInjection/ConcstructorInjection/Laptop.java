@@ -1,4 +1,4 @@
-package DpendencyInjection.ConcstructorInjection;
+package DependencyInjection.ConcstructorInjection;
 
 public class Laptop implements Computer{
 

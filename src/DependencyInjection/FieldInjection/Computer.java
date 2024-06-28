@@ -1,4 +1,4 @@
-package DpendencyInjection.SetterInjection;
+package DependencyInjection.FieldInjection;
 
 public interface Computer {
     void start();
