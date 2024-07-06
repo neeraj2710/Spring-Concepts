@@ -8,7 +8,8 @@ import org.springframework.core.io.ClassPathResource;
 public class UseStudent {
     public static void main(String[] args) {
         BeanFactory container = new XmlBeanFactory(new ClassPathResource("/inversionOfControl/Ex1/resources/beanConfig.xml"));
-        Student student = (Student) container.getBean("stObj");
+//        Student student = (Student) container.getBean("stObj");
+        Student student = (Student) container.getBean(Student.class);
         System.out.println(student);
     }
 }
