@@ -4,7 +4,7 @@ import java.lang.reflect.Field;
 
 public class UseProgrammer {
     public static void main(String[] args)throws Exception {
-        Class clz = Class.forName("DependencyInjection.FieldInjection.Programmer");
+        Class<?> clz = Class.forName("DependencyInjection.FieldInjection.Programmer");
         Object obj = clz.newInstance();
         Programmer p1 = (Programmer) obj;
 
