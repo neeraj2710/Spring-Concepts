@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="inversionOfControl.referenceInjection.beans.Laptop" id="lp1">
+        <property name="brand" value="Asus"/>
+    </bean>
+    <bean class="inversionOfControl.referenceInjection.beans.Programmer" id="p1">
+        <property name="name" value="Raj"/>
+        <property name="lp" ref="lp1"/>
+    </bean>
+</beans>

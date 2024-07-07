@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean class="inversionOfControl.assignment1.beans.Laptop" id="lp">
+        <property name="brand" value="Asus"/>
+    </bean>
+    <bean class="inversionOfControl.assignment1.beans.Desktop" id="dk">
+        <property name="brand" value="Intel"/>
+    </bean>
+    <bean class="inversionOfControl.assignment1.beans.Programmer" id="p1">
+        <property name="name" value="Neeraj"/>
+        <property name="comp" ref="dk"/>
+    </bean>
+    <bean class="inversionOfControl.assignment1.beans.Programmer" id="p2">
+        <property name="name" value="Neeraj"/>
+        <property name="comp" ref="lp"/>
+    </bean>
+</beans>
