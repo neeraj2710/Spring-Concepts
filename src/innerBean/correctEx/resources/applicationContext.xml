@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean class="innerBean.correctEx.beans.Customer" id="cus1">
+        <property name="name" value="Ashish"/>
+        <property name="account">
+            <bean class="innerBean.correctEx.beans.Account" >
+                <property name="id" value="101"/>
+                <property name="type" value="saving"/>
+                <property name="balance" value="50000"/>
+            </bean>
+        </property>
+    </bean>
+
+    <bean class="innerBean.correctEx.beans.Customer" id="cus2">
+        <property name="name" value="Raj"/>
+        <property name="account">
+            <bean class="innerBean.correctEx.beans.Account">
+                <property name="id" value="102"/>
+                <property name="type" value="saving"/>
+                <property name="balance" value="100000"/>
+            </bean>
+        </property>
+    </bean>
+</beans>

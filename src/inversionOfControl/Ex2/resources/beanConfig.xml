@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean class="inversionOfControl.Ex1.beans.Student" id="stObj">
-        <property name="rollno" value="101"/>
+        <property name="rollno" value="102"/>
         <property name="name" value="Neeraj"/>
     </bean>
 
