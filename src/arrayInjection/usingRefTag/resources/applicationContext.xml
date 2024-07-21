@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean class="arrayInjection.usingRefTag.beans.Employee" id="e1">
+        <property name="empId" value="101"/>
+        <property name="empName" value="Rajesh"/>
+    </bean>
+    <bean class="arrayInjection.usingRefTag.beans.Employee" id="e2">
+        <property name="empId" value="102"/>
+        <property name="empName" value="Samay"/>
+    </bean>
+    <bean class="arrayInjection.usingRefTag.beans.Employee" id="e3">
+        <property name="empId" value="103"/>
+        <property name="empName" value="Suraj"/>
+    </bean>
+    <bean class="arrayInjection.usingRefTag.beans.Company" id="comp">
+        <property name="name" value="Samsung"/>
+        <property name="employees">
+            <array>
+                <ref bean="e1"/>
+                <ref bean="e2"/>
+                <ref bean="e3"/>
+            </array>
+        </property>
+    </bean>
+</beans>
