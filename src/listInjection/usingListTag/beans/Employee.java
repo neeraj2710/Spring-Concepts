@@ -1,4 +1,4 @@
-package listInjection.usingBeanTag.beans;
+package listInjection.usingListTag.beans;
 
 public class Employee {
     private int empId;

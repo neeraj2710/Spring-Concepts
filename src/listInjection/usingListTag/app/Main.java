@@ -1,12 +1,12 @@
-package listInjection.usingBeanTag.app;
+package listInjection.usingListTag.app;
 
-import listInjection.usingBeanTag.beans.Company;
+import listInjection.usingListTag.beans.Company;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("/listInjection/usingBeanTag/resources/applicationContext.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("/listInjection/usingListTag/resources/applicationContext.xml");
         Company comp = context.getBean("comp", Company.class);
         System.out.println(comp);
     }

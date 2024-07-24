@@ -2,19 +2,19 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean class="listInjection.usingBeanTag.beans.Company" id="comp">
+    <bean class="listInjection.usingListTag.beans.Company" id="comp">
         <property name="name" value="Samsung"/>
         <property name="employees">
             <list>
-                <bean class="listInjection.usingBeanTag.beans.Employee">
+                <bean class="listInjection.usingListTag.beans.Employee">
                     <property name="empId" value="101"/>
                     <property name="empName" value="Neeraj"/>
                 </bean>
-                <bean class="listInjection.usingBeanTag.beans.Employee">
+                <bean class="listInjection.usingListTag.beans.Employee">
                     <property name="empId" value="102"/>
                     <property name="empName" value="Prachi"/>
                 </bean>
-                <bean class="listInjection.usingBeanTag.beans.Employee">
+                <bean class="listInjection.usingListTag.beans.Employee">
                     <property name="empId" value="103"/>
                     <property name="empName" value="Kritika"/>
                 </bean>
