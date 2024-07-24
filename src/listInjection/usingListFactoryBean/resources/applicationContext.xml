@@ -7,9 +7,7 @@
         <property name="roll" value="101"/>
         <property name="subjects">
             <bean class="org.springframework.beans.factory.config.ListFactoryBean">
-                <property name="targetListClass">
-                    <value>java.util.LinkedList</value>
-                </property>
+                <property name="targetListClass" value="java.util.LinkedList"/>
                 <property name="sourceList">
                     <list>
                         <value>Physics</value>
