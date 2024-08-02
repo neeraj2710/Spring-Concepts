@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean class="autowiring.mode_no.beans.Account" id="acc">
+        <property name="id" value="SAV-101"/>
+        <property name="balance" value="50000"/>
+    </bean>
+
+    <bean class="autowiring.mode_no.beans.Customer" id="cus1" autowire="no">
+        <property name="name" value="neeraj"/>
+    </bean>
+</beans>
