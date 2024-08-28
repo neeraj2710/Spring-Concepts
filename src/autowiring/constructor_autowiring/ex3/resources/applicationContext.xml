@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="autowiring.constructor_autowiring.ex3.beans.Account" id="acc" >
+        <property name="id" value="SAV-101"/>
+        <property name="balance" value="100000"/>
+    </bean>
+
+    <bean class="autowiring.constructor_autowiring.ex3.beans.Account" id="myacc" >
+        <property name="id" value="SAV-102"/>
+        <property name="balance" value="200000"/>
+    </bean>
+
+    <bean class="autowiring.constructor_autowiring.ex3.beans.Customer" id="cus1" autowire="constructor">
+        <property name="name" value="neeraj"/>
+    </bean>
+
+
+</beans>

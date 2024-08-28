@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       default-autowire-candidates="my*"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="autowiring.default_autowire_candidate.ex1.beans.Account" id="myacc1" autowire-candidate="false">
+        <property name="id" value="SAV-101"/>
+        <property name="balance" value="50000"/>
+    </bean>
+
+    <bean class="autowiring.default_autowire_candidate.ex1.beans.Account" id="amyacc">
+        <property name="id" value="CUR-101"/>
+        <property name="balance" value="100000"/>
+    </bean>
+
+
+    <bean class="autowiring.default_autowire_candidate.ex1.beans.Account" id="myacc">
+        <property name="id" value="CUR-102"/>
+        <property name="balance" value="200000"/>
+    </bean>
+
+    <bean class="autowiring.default_autowire_candidate.ex1.beans.Customer" id="cus1" autowire="byType">
+        <property name="name" value="neeraj"/>
+    </bean>
+
+<!--    supported patterns for default-autowire-candidate
+        1) Exact match: id should be same as attribute value
+        2) Wildcard(*)
+        3) Comma separated multiple patterns
+-->
+</beans>
