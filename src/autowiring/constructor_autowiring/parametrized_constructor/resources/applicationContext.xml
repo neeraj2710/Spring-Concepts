@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="autowiring.constructor_autowiring.parametrized_constructor.beans.Account" id="account" >
+        <property name="id" value="SAV-101"/>
+        <property name="balance" value="100000"/>
+    </bean>
+
+    <bean class="autowiring.constructor_autowiring.parametrized_constructor.beans.Address" id="address">
+        <property name="houseNo" value="25"/>
+        <property name="city" value="Bhopal"/>
+    </bean>
+
+<!--    not recommended method                     -->
+<!--    <bean class="java.lang.String" id="name">  -->
+<!--        <constructor-arg value="Jayant"/>      -->
+<!--    </bean>                                    -->
+
+    <bean class="autowiring.constructor_autowiring.parametrized_constructor.beans.Customer" id="cus1" autowire="constructor">
+        <constructor-arg index="0" name="name" value="Somesh"/>
+        <constructor-arg index="1" name="age" value="22"/>
+    </bean>
+
+
+</beans>
